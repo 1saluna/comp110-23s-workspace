@@ -1,6 +1,6 @@
-"""One Shot Wordle"""
+"""One Shot Wordle."""
 
-__author__ = 730572303
+__author__ = "730572303"
 
 SECRET: str = "python"
 guess: str = (input("What is your 6-letter guess? "))
@@ -14,7 +14,7 @@ GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
 
 while len(guess) != len(SECRET):
-        guess = input("That was not 6 letters! Try again: ")
+    guess = input("That was not 6 letters! Try again: ")
 while guessidx < len(SECRET):
     if SECRET[guessidx] == guess[guessidx]:
         idx = idx + GREEN_BOX
@@ -26,14 +26,13 @@ while guessidx < len(SECRET):
                 bool = True
             else:
                 index = index + 1
-        if bool == True:
-                idx = idx + YELLOW_BOX
+        if bool is True:
+            idx = idx + YELLOW_BOX
         else:
             idx = idx + WHITE_BOX
     guessidx = guessidx + 1
 print(idx)
 if guess == SECRET:
-        print("Woo! You got it!")
+    print("Woo! You got it!")
 if guess != SECRET:
-            print("Not quite. Play again soon!")
-
+    print("Not quite. Play again soon!")
