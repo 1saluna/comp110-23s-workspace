@@ -2,7 +2,7 @@
 
 __author__ = "730572303"
 
-from ex05.utils import only_evens, concat, sub
+from utils import only_evens, concat, sub
 
 
 def test_evens() -> None:

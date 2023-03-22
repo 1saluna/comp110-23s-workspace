@@ -2,7 +2,7 @@
 
 __author__ = "730572303"
 
-SECRET: str = "codes"
+SECRET: str = "nugget"
 
 def contains_char(word: str, character: str) -> bool: #  uses contains_char to see if the character is in the word
     index: int = 0
