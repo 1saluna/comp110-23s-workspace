@@ -3,8 +3,8 @@
 __author__ = "730572303"
 
 
-def invert(my_dict: dict[str, str]) -> dict[str,str]: 
-    "Makes the key the value and the value the key."
+def invert(my_dict: dict[str, str]) -> dict[str, str]: 
+    """Makes the key the value and the value the key."""
     new_dict: dict[str, str] = dict()
     for key in my_dict:
         if my_dict[key] in new_dict:
@@ -41,12 +41,3 @@ def count(my_list: list[str]) -> dict[str, int]:
             new_dict[my_list[i]] = 1
         i += 1
     return new_dict
-
-    # for num in my_list:
-    #     for key in new_dict:
-    #         my_list[num] = key
-    #         if my_list[num] in new_dict:
-    #             new_dict[my_list[num]] +=1
-    #         else: 
-    #             new_dict[my_list[num]] = 1
-    # return new_dict
