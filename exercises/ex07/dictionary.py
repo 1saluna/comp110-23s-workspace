@@ -33,11 +33,20 @@ def favorite_color(my_dict: dict[str, str]) -> str:
 def count(my_list: list[str]) -> dict[str, int]:
     """Makes a new dictionary out of a list with how many times the values appear in a list."""
     new_dict: dict[str, int] = dict()
-    for num in my_list:
-        for key in new_dict:
-            my_list[num] = key
-            if my_list[key] in new_dict:
-                new_dict[my_list[num]] +=1
-            else: 
-                new_dict[my_list[num]] = 1
+    i: int = 0
+    while i < len(my_list):
+        if my_list[i] in new_dict:
+            new_dict[my_list[i]] += 1
+        else:
+            new_dict[my_list[i]] = 1
+        i += 1
     return new_dict
+
+    # for num in my_list:
+    #     for key in new_dict:
+    #         my_list[num] = key
+    #         if my_list[num] in new_dict:
+    #             new_dict[my_list[num]] +=1
+    #         else: 
+    #             new_dict[my_list[num]] = 1
+    # return new_dict
