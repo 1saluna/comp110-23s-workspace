@@ -8,7 +8,7 @@ from dictionary import invert, favorite_color, count
 def test_invert_letters() -> None:
     """Invert dictionary with letters."""
     test_dict: dict[str, str] = {"a": "b", "c": "d", "e": "f"}
-    assert invert(test_dict) == {"b" : "a", "d" : "c", "f": "e"}
+    assert invert(test_dict) == {"b": "a", "d": "c", "f": "e"}
 
 
 def test_invert_words() -> None:
